@@ -1,0 +1,123 @@
+:root {
+    /* colors */
+    --clr-body: 0 0% 11%;
+    --clr-outer-dark: 227 11% 15%;
+    --clr-info-dark: 231 12% 12%;
+    --clr-footer-dark: 231 7% 9%;
+    --clr-off-white: 0 0% 86%;
+    --clr-stack: 25 79% 78%;
+    
+    /* font-sizes */
+    --fs-700: 1.5625rem;
+    --fs-400: 0.74rem;
+    --fs-700-heading: 1rem;
+    
+    /* font-families */
+    --ff-sans-serif: "Inter", sans-serif;
+}
+
+
+
+/* Reset margins */
+*{
+    margin: 0; 
+    list-style: none;
+    text-decoration: none;
+}
+
+/* set up the body */
+body {
+    font-family: var(--ff-sans-serif);
+    color: hsl( var(--clr-off-white) );
+    background-color: hsl(var(--clr-body) / 1);
+    min-height: 100vh;
+}
+
+a{
+    color: inherit;
+}
+
+.main {
+    background: hsl(var(--clr-outer-dark) / 1);
+    max-width: 34.375rem;
+    margin-inline: auto;
+    padding: 3.3125em 4.0625em
+}
+
+.main__section {
+    background: hsl(var(--clr-info-dark) / 1);
+    max-width: 19.8125rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+img {
+    max-width: 100%;
+    display:block;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 5px;
+}
+
+
+section{
+    padding: 5px 20px 5px 20px;
+    margin: 10px;
+}
+
+
+.info{
+    text-align: center;
+}
+
+h2{
+color: hsl(var(--clr-stack) / 1);
+}
+
+p{
+    line-height: 1.5;
+    font-size: var(--fs-400);
+    padding-bottom: 20px;
+}
+
+h3{
+    font-size: var(--fs-700-heading);
+    padding-bottom: 5px;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    margin-inline: 10px ;
+    padding: 5px 10px 5px 10px;
+    font-size: var(--fs-700);
+    cursor: pointer;
+}
+
+/* Footer */
+.section_footer {
+    background: hsl(var(--clr-footer-dark) / 1);
+    border-radius: 0px 0px 10px 10px;
+    padding: 1.1875em 0;
+    
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 247px;
+}
+
+.footer_social li {
+    background: hsla(254, 6%, 58%, 1);
+    padding: 0.2em;
+    border-radius: 5px
+}
+
+li + li {
+    margin-left: 1.5em
+}
+
